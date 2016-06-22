@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3333/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+
+    <title>PeerKeeper: keeps your PeerStuff safe</title>
+
+    <link rel="stylesheet" type="text/css" href="./PeerKeeper_files/icon.css">
+    <link rel="stylesheet" type="text/css" href="./PeerKeeper_files/semantic.css">
+
+    <script src="./PeerKeeper_files/jquery.js"></script>
+
+    <script src="./PeerKeeper_files/semantic.js"></script>
+
+    <script src="./PeerKeeper_files/vendor.js"></script>
+    <script>
+        Buffer = require('buffer').Buffer
+    </script>
+    <script src="./PeerKeeper_files/app.js"></script>
+    <script>
+        require('initialize');
+    </script>
+    <style type="text/css">
+        body {
+            background-image: url("img/logomask.png");
+            background-color: #DADADA;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom left;
+            background-attachment: fixed;
+        }
+
+        .container {
+            height: 100%;
+        }
+
+        .middle {
+            min-height: 100%;
+        }
+
+        .image {
+            margin-top: -100px;
+        }
+
+        .column {
+            max-width: 450px;
+        }
+
+        @media screen and (max-width: 601px) {
+            .wa-computer {
+                display: none !important;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .wa-mobile {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="dimmable undetached">
+    <div id="app" class="container">
+        <div id="wa-content" class="container" data-reactid=".0">
+            <div id="splash" class="ui middle aligned center aligned grid" data-reactid=".0.0">
+                <div class="column" data-reactid=".0.0.0">
+                    <form class="ui large form" data-reactid=".0.0.0.0">
+                        <div class="ui segment" data-reactid=".0.0.0.0.0">
+                            <h2 class="ui blue image header" data-reactid=".0.0.0.0.0.0"><div class="content" data-reactid=".0.0.0.0.0.0.0">PeerKeeper</div></h2>
+                            <div class="ui field fluid large basic blue button" data-reactid=".0.0.0.0.0.1">I have a key</div>
+                            <div class="ui field fluid large primary button" data-reactid=".0.0.0.0.0.2">Generate me a key</div>
+                        </div>
+                        <div class="ui error message" data-reactid=".0.0.0.0.1"></div>
+                    </form>
+                    <div class="ui basic modal" data-reactid=".0.0.0.1">
+                        <div class="content" data-reactid=".0.0.0.1.0">
+                            <div class="ui middle aligned center aligned grid" data-reactid=".0.0.0.1.0.0">
+                                <div class="column" data-reactid=".0.0.0.1.0.0.0">
+                                    <form class="ui large form" data-reactid=".0.0.0.1.0.0.0.0">
+                                        <h4 data-reactid=".0.0.0.1.0.0.0.0.0">Choose a password to lock your new key.</h4>
+                                        <div class="field" data-reactid=".0.0.0.1.0.0.0.0.1">
+                                            <div class="ui left icon input" data-reactid=".0.0.0.1.0.0.0.0.1.0"><i class="lock icon" data-reactid=".0.0.0.1.0.0.0.0.1.0.0"></i>
+                                                <input id="new-password" type="password" name="password" placeholder="Password" data-reactid=".0.0.0.1.0.0.0.0.1.0.1">
+                                            </div>
+                                        </div>
+                                        <div class="ui field fluid large blue button" data-reactid=".0.0.0.1.0.0.0.0.2">Generate</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui dimmer modals page"></div>
+</body>
+
+</html>
